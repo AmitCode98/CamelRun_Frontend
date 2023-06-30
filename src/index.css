@@ -1,0 +1,45 @@
+/* Montserrat Font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+
+/* Tailwind util Classes */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* SCROLL BAR */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* CUSTOM CSS */
+:root{
+  font-family: 'Montserrat', sans-serif;
+  @apply bg-backgroundColor text-[#fff] font-light;
+}
+
+:focus{
+  outline: none;
+}
+
+.container{
+  @apply w-11/12 lg:w-[80%] mx-auto;
+}
+/* Scroll Text Effect   */
+.scroll-left {
+  
+  animation: scroll-left 5s linear infinite;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-100% - 128px));
+  }
+}
+
+/* custom-utilities.css */
+.clip-path-custom-shape {
+  clip-path: polygon(20% 0, 100% 0, 100% 100%, 0% 100%);
+}
