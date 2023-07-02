@@ -45,7 +45,7 @@ const Header = () => {
     return (
         <header
             ref={headerRef}
-            className='fixed inset-x-0 py-4 z-40'
+            className='fixed top-0 inset-x-0 py-4 z-40'
             style={{
                 background: 'rgba(58, 52, 52, 0.5)',
                 backdropFilter: 'blur(42px)'

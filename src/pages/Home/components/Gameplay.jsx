@@ -70,7 +70,7 @@ const Gameplay = () => {
                         </div>
                     </div>
 
-                    <div className='absolute right-0 top-[40%] w-[50rem] bg-gradient py-[1px] pl-[1.5px] clip-path-custom-shape'>
+                    <div className='absolute right-0 top-[35%] w-[50%] bg-gradient py-[1.5px] pl-[2px] clip-path-custom-shape'>
                         {active === `racing` ? (
                             // <img src={GameplayImg2} alt="img" className='' />
                             <>
@@ -78,7 +78,7 @@ const Gameplay = () => {
                             </>
                         ) : (
                             <>
-                             <video src={GameplayVideo} className='clip-path-custom-shape'></video>
+                             {/* <video src={GameplayVideo} className='clip-path-custom-shape'></video> */}
                             </>
                         )}
                     </div>

@@ -134,7 +134,7 @@ const Welcome = () => {
     };
 
     return (
-        <div className='relative -mt-14 z-0' style={{ clipPath: 'polygon(0 6%, 80% 0, 100% 5%, 100% 100%, 0 100%)' }}>
+        <div className='relative -mt-12 z-0' style={{ clipPath: 'polygon(0 6%, 80% 0, 100% 5%, 100% 100%, 0 100%)' }}>
             <img src={BgImg} alt='img' className='object-cover' />
             <div
                 className='absolute inset-0 z-10 pt-[12%]'

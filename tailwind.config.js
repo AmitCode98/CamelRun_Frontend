@@ -31,6 +31,10 @@ export default {
         bold: 700,
         extrabold: 800
       },
+      //Font Family
+      fontFamily:{
+        "DMSans": ['DM Sans', 'sans-serif']
+      },
       // Screens
       screens: {
         'sm': '480px',

@@ -6,6 +6,8 @@ import Gameplay from "./Gameplay";
 import Marketplace from "./Marketplace";
 import Roadmap from "./Roadmap";
 import LatestPost from "./LatestPost";
+// import MainBackers from "./MainBackers";
+
 
 export {
     Hero,
@@ -15,6 +17,9 @@ export {
     Gameplay,
     Marketplace,
     Roadmap,
-    LatestPost
+    LatestPost,
+    
+    
+    // MainBackers
     
 }
