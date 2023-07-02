@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import GameplayImg from '../../../../src/assets/home/Gameplay.png'
+import GameplayImg from '../../../../src/assets/home/gameplay.png'
 import { BsPlayFill } from 'react-icons/bs'
 import { PrimaryButton } from '../../../components'
 import GameplayImg2 from '../../../assets/home/GameplayImg.png'
@@ -78,7 +78,7 @@ const Gameplay = () => {
                             </>
                         ) : (
                             <>
-                             {/* <video src={GameplayVideo} className='clip-path-custom-shape'></video> */}
+                             <video src={GameplayVideo} className='clip-path-custom-shape'></video>
                             </>
                         )}
                     </div>
