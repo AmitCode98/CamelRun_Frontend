@@ -22,7 +22,7 @@ const Hero = () => {
                             color: 'transparent'
                         }}
                     >
-                        legends of the <br/> sands
+                        legends of <br/> sands
                     </p>
                     <p className='text-lg  font-semibold'>
                         CAMEL RUN coexists in the Camel Racing, metaverse, and <br /> gaming worlds. Camel Run, a first-mover advantage has<br />been established in a trending market with the mission to <br /> establish Camel ownership for the masses and gamify
