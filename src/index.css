@@ -1,7 +1,9 @@
 /* Montserrat Font */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+
 /* DM Sans */
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
 /* Tailwind util Classes */
 @tailwind base;
 @tailwind components;
@@ -23,8 +25,12 @@
 }
 
 .container{
-  @apply w-11/12 lg:w-[80%] mx-auto;
+  @apply w-11/12 lg:w-[90%] mx-auto;
 }
+/* .container{
+  @apply w-11/12 lg:w-[80%] mx-auto;
+} */
+
 /* Scroll Text Effect   */
 .scroll-left {
   
@@ -40,7 +46,154 @@
   }
 }
 
+
 /* custom-utilities.css */
 .clip-path-custom-shape {
   clip-path: polygon(20% 0, 100% 0, 100% 100%, 0% 100%);
 }
+
+
+
+/* Glitch text Effect */
+/* @keyframes glitch-animation {
+  0% {
+    transform: none;
+    opacity: 1;
+  }
+  20% {
+    transform: skewX(-20deg);
+    opacity: 0.7;
+  }
+  40% {
+    transform: skewX(20deg);
+    opacity: 0.9;
+  }
+  60% {
+    transform: skewX(-20deg);
+    opacity: 0.7;
+  }
+  80% {
+    transform: skewX(20deg);
+    opacity: 0.9;
+  }
+  100% {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+.glitch {
+  position: relative;
+  display: inline-block;
+}
+
+.glitch::before {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: red;
+  clip-path: polygon(0 8%, 100% 0, 100% 92%, 0 100%);
+  animation: glitch-animation 2s infinite;
+}
+
+.glitch::after {
+  content: attr(data-text);
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  color: blue;
+  clip-path: polygon(0 0, 100% 8%, 100% 100%, 0% 92%);
+  animation: glitch-animation 3s infinite;
+} */
+
+
+/* glitch 2 */
+/* .wrapper{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+  
+  
+.glitch2{
+  color: white;
+  font-family: sans-serif;
+  font-weight: 800;
+  position: relative;
+  font-size: 100px;
+  padding: 30px;
+  
+
+}
+  
+  .glitch2::before, .glitch2::after{
+    padding: 30px;
+    color: white;
+    content: "Glitch";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: black;
+    overflow: hidden;
+    top: 0
+  }
+   
+  
+  .glitch::before{
+    left: 3px;
+    text-shadow: -2px 0 red;
+    animation-name: glitch-animation-1;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse-alternate;
+    
+  }
+  
+  .glitch::after
+  {
+    left: -3px;
+    text-shadow: -2px 0 blue;
+    animation-name: glitch-animation-2;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse-alternate;
+  }
+  
+  @keyframes glitch-animation-1 {
+    0% {
+      clip: rect(0px, 350px, 0px, 30px);
+    }
+    5% {
+      clip: rect(150px, 350px, 175px, 30px);
+    }
+    10% {
+      clip: rect(80px, 350px, 130px, 30px);
+    }
+    /* ... and so on for other steps */
+    /* 100% {
+      clip: rect(100px, 350px, 120px, 30px);
+    }
+  }
+    
+  @keyframes glitch-animation-2 {
+    0% {
+      clip: rect(0px, 350px, 0px, 30px);
+    }
+    5% {
+      clip: rect(150px, 350px, 175px, 30px);
+    }
+    10% {
+      clip: rect(80px, 350px, 130px, 30px);
+    }
+    /* ... and so on for other steps */
+    /* 100% {
+      clip: rect(100px, 350px, 120px, 30px);
+    }
+  } */  
